@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>線上支付</title>
+    <link rel="stylesheet" href="onlinePayment.css" />
+  </head>
+  <body>
+    <header>
+      <div class="con">
+        <h1>anello</h1>
+        <ul>
+          <li>活動</li>
+          <li>分類</li>
+          <li>EN</li>
+        </ul>
+        <ul class="right">
+          <li><img src="search.png" alt="" /></li>
+          <li><img src="profile.png" alt="" /></li>
+          <li><img src="shopping-cart.png" alt="" /></li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="schedule">
+        <ol class="schedule_current">
+            <li class="schedule_item schedule_item1">請選擇款式/數量</li>
+            <li class="schedule_item schedule_item2">購物車/結帳</li>
+            <li class="schedule_item schedule_item3">完成訂購</li>
+        </ol>
+      </div>
+      <div class="con">
+        <div class="commodity">
+          <h3>購物車</h3>
+          <div class="border_main">
+            <table>
+              <tr>
+                <th>商品名稱</th>
+                <th>數量</th>
+                <th>售價</th>
+                <th>折扣</th>
+                <th>實付價格</th>
+                <th>移除</th>
+              </tr>
+              <tr>
+                <td>經典口袋後背包(法國色)L尺寸</td>
+                <td>1</td>
+                <td>16,400</td>
+                <td>400</td>
+                <td>16,000</td>
+                <td>移除</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="information">
+          <div class="pay item">
+            <h3>支付</h3>
+            <div class="border_main">
+              <select name="" id="" >
+                <option
+                  value="一般宅配"
+                  style="color: #b6b6b6"
+                  disabled
+                  selected
+                >
+                  一般宅配
+                </option>
+              </select>
+              <p>通訊錄選擇收件人</p>
+              <select name="" id="" class="w50">
+                <option value="縣市" style="color: #b6b6b6" disabled selected>
+                  縣市
+                </option>
+              </select>
+              <select name="" id="" class="w50">
+                <option
+                  value="鄉鎮市區"
+                  style="color: #b6b6b6"
+                  disabled
+                  selected
+                >
+                  鄉政市區
+                </option>
+              </select>
+              <select name="" id="">
+                <option
+                  value="收件地址"
+                  style="color: #b6b6b6"
+                  disabled
+                  selected
+                >
+                  收件地址
+                </option>
+              </select>
+              <select name="" id="">
+                <option
+                  value="請選擇付款方式"
+                  style="color: #b6b6b6"
+                  disabled
+                  selected
+                  >請選擇付款方式
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="purchaser item">
+            <h3>購買人資料</h3>
+            <div class="border_main">
+              <input type="name" placeholder="購買人姓名" />
+              <input type="number" placeholder="連絡電話" />
+              <input type="email" placeholder="E-mail" />
+              <input type="checkbox" />
+              <p>儲存到收件人通訊錄</p>
+              <input type="textarea" rows="2" name="S1" cols="20" placeholder="備註事項" />
+            </div>
+          </div>
+          <div class="invoice item">
+            <h3>發票資料</h3>
+            <div class="border_main">
+              <input type="text" placeholder="個人電子發票(兩聯式)" />
+              <input type="text" placeholder="無載具" />
+              <input type="checkbox" />
+              <p>我同意辦理退貨時，由anello代為處裡發票，已加速退貨退款作業</p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>anello @2019 rights reseved.</p>
+    </footer>
+  </body>
+</html>

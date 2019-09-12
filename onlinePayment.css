@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 微軟正黑體, Arial, Helvetica, sans-serif;
+  /* outline: 1px solid red; */
+}
+
+.con {
+  width: 1200px;
+  margin: auto;
+}
+h3 {
+  padding: 10px 0;
+}
+.clear {
+  clear: both;
+}
+.item {
+  float: left;
+  width: 400px;
+  height: 500px;
+  padding-right: 20px;
+  text-align: center;
+}
+.item h3 {
+  text-align: left;
+}
+select {
+  height: 40px;
+  color: #ccc;
+  width: 100%;
+  margin: 10px 0;
+}
+option {
+}
+.w50 {
+  width: 180px;
+  display: inline-block;
+}
+input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  color: #ccc;
+  padding: 10px;
+}
+input[type='checkbox'] {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.border_main {
+  border-top: 3px solid #000;
+  padding: 10px 0;
+}
+header {
+  padding: 20px 50px;
+}
+header h1 {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+
+  vertical-align: middle;
+}
+header ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+header ul li {
+  display: inline-block;
+  padding: 10px;
+}
+header ul li img {
+  width: 20px;
+  height: 20px;
+}
+.right {
+  float: right;
+  padding: 10px;
+}
+
+.main .schedule {
+  height: 100px;
+  width: 100%;
+  background-color: #ccc;
+}
+.main .schedule_current {
+  position: relative;
+  margin: 0 500px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.main .schedule_current::before {
+  content: '';
+  display: block;
+  position: absolute;
+  padding: 5px;
+  width: 100%;
+  top: 30px;
+  background-color: #eee;
+}
+.main .schedule_item1 {
+  left: 0;
+}
+.main .schedule_item2 {
+  left: 50%;
+}
+.main .schedule_item3 {
+  left: 100%;
+  width: 4em;
+}
+.main .schedule_item {
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.main .schedule_current .schedule_item1::before,.main .schedule_current  .schedule_item2::before {
+  background-color: #333;
+}
+
+.main .schedule_current::before{
+  background-image: linear-gradient(to right, #333 50%,#eee 50%);
+}
+
+.main .schedule_item::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 10px;
+  /* border-radius: 12px; */
+  background-color: #eee;
+}
+
+.main .commodity {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.main .commodity table {
+  width: 100%;
+  border: none;
+}
+
+.main .commodity table th {
+  background-color: #ccc;
+  padding: 10px;
+}
+.main .commodity table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.pay p {
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(230, 225, 225);
+}
+
+.purchaser {
+  text-align: left;
+}
+.purchaser p {
+  display: inline-block;
+  color: rgb(163, 158, 158);
+}
+.invoice {
+  text-align: left;
+}
+.invoice p {
+  color: rgb(163, 158, 158);
+}
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #ccc;
+}
